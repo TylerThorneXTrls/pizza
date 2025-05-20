@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:auto;
+            text-align: center;
+        }
+        body{
+            width:80vw;
+            background-color: white;
+        }
+        .container{
+            width: 80vw;
+            margin-top: 12px;
+            border-radius: 12px;
+            background-color: white;
+
+        }
+        header{
+            background-color: red;
+            color: white;
+            border-radius: 6px;
+            height: 100px;
+            display: flex;
+            gap:10px;
+            flex-direction: column;
+        }
+        #order{
+            background-color: white;
+            border: 2px red solid;
+            
+        }
+        #statistics{
+            display: flex;
+            gap:20px;
+            width:100%;
+            background-color: white;
+        }
+        #statistics > div{
+            display: flex;
+            flex-direction: column;
+            color:gray;
+            border: 1px gray solid;
+            width:27%;
+            background-color: white;
+        }
+        #statusbar{
+            width:50%;
+            background-color: red;
+            border-radius: 8px;
+            height: 20px;
+            margin-top: 20px;
+            margin-left: none;
+            margin-right: 100%;
+
+        }
+        #order-updates{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+
+        }
+        #order-updates > p {
+            width: 60%;
+            height:fit-content;
+            border:2px solid black
+        }
+    </style>
+
+</head>
+<body id="body">
+    <div class="container">
+    <header>
+        <h1>Pizza Pickup Tracker</h1>
+        <h3>order your pizza and track it in real time</h3>
+    </header>
+    <button id="addPizza">Order Pizza</button>
+    <div id="order" style="display: none;"></div>
+
+</div>
+<div id="statistics">
+    <div><h6>Ready In</h6><h3 id="time">20:00</h3></div>
+    <div><h6>Current Status</h6><h3 id="status">Unknown</h3></div>
+    <div><h6>Order Number</h6><h3 id="number">#00000</h3></div>
+
+</div>
+<h3>status bar</h3>
+<div id="statusbar"></div>
+<div>
+    <h4>Order Updates</h4>
+    <div id="order-updates"></div>
+</div>
+    
+
+   
+    
+        
+       
+
+
+
+    <script src="pizza.js"></script>
+    
+</body>
+</html>
